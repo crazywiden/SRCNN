@@ -9,8 +9,13 @@ This project has implemented a SRCNN model using Pytorch for improve the resolut
  - Python 3.6 and above
 
 ## Dataset description
+ - train data: 64x64 image and 128x128 image pairs
+ - test data: 64x64 image
+ - __Note: this script only works for image size of 64x64 and 128x182 now. Waiting to be updated later__
 
 ## Parameter explaination
+ - Run 'python main.py -h' and will get options on parameters you can set for this script. 
+ - 
 
 
 # reference
