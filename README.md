@@ -14,8 +14,11 @@ This project has implemented a SRCNN model using Pytorch for improve the resolut
  - __Note: this script only works for image size of 64x64 and 128x182 now. Waiting to be updated later__
 
 ## Parameter explaination
- - Run 'python main.py -h' and will get options on parameters you can set for this script. 
- - 
+ - Run `python main.py -h` and will get options on parameters you can set for this script. 
+ 
+## Algorithm explanation
+ - Use [bicubic](http://www.paulinternet.nl/?page=bicubic) interpolation to interpolating image size of 64x64 to size of 128x128
+ - Use SRCNN to improve the resolution of image size of 128x128
 
 
 # reference
