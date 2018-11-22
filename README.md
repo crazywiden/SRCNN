@@ -8,7 +8,9 @@ This project has implemented a SRCNN model using Pytorch for improve the resolut
  - plotly 2.0.11
  - Python 3.6 and above
 
-## Data set description
+## Dataset description
+
+## Parameter explaination
 
 
 # reference
