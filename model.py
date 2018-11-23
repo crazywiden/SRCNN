@@ -103,7 +103,7 @@ class SRCNN(object):
                     hr_img = Variable(hr_img)
                     optimizer.zero_grad() # clear all gradients in last epoch
                     outputs = net(lr_img) # forward step
-                    loss = torch.sqrt(criterion(outputs,hr_img))
+                    loss = criterion(outputs,hr_img)
                     train_iter_loss += loss.item()/outputs.size()[0]
                     loss.backward()
                     optimizer.step()
@@ -118,7 +118,7 @@ class SRCNN(object):
                     print("test_hr:",hr_img.size())
                     outputs = net(lr_img)
                     print(outputs.size())
-                    loss = torch.sqrt(criterion(outputs,hr_img))
+                    loss = criterion(outputs,hr_img)
                     test_iter_loss += loss.item()
                 # test_loss.append(test_iter_loss/(len(train_loader)*self.batch_size))
                 test_loss.append(test_iter_loss/(len(test_loader)))
